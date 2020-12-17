@@ -2,3 +2,27 @@
     margin: 0;
     padding: 0;
 }
+
+div.parallax {
+    background-image: url(../img/pexels-miriam-espacio-110854.jpg);
+
+    height: 700px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+section {
+    background-color: lightpink;
+    height: 100%;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
