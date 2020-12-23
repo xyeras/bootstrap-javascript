@@ -3,22 +3,89 @@
     padding: 0;
 }
 
-div.parallax {
-    background-image: url(../img/pexels-miriam-espacio-110854.jpg);
-
-    height: 700px;
+/* #myVideo {
+    min-width: 100%;
+    min-height: 100%;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    z-index: -1;
+} */
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
 }
 
+/* Add some content at the bottom of the video/page */
+.content {
+    /* position: fixed;
+    bottom: 0; */
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+
+  }
+  
+/* div.parallax {
+    background-image: url(../img/pexels-miriam-espacio-110854.jpg);
+
+    height: 800px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 0;
+} */
+
 section {
-    background-color: lightpink;
-    height: 100%;
+    height: 900px;
 }
+
+.text1{ 
+    font-size: 200px; 
+    font-weight: 700; 
+    letter-spacing: 8px; 
+    margin-bottom: 20px;
+    position: relative; 
+    animation: text 3s 1;
+    z-index: 2;
+}
+
+.text2 { 
+    font-size: 200px; 
+    font-family: Georgia, serif; 
+}
+
+.pad-top {
+    padding-top: 110px;
+}
+
+@keyframes text{ 
+    0%{ 
+        color: black; 
+        margin-bottom: -40px; 
+    } 
+    30%{ 
+        letter-spacing: 25px; 
+        margin-bottom: -40px; 
+        } 
+    85%{ 
+        letter-spacing: 8px; 
+        margin-bottom: -40px; 
+    } 
+} 
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
