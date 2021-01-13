@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+nav {
+    background-image: url(../img/pexels-miriam-espacio-110854.jpg);
+}
+
 /* #myVideo {
     min-width: 100%;
     min-height: 100%;
